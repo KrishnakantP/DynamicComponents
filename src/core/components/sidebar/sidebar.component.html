@@ -1,0 +1,5 @@
+<div *ngFor="let data of componentData" class="sidebarlinks" (click)="instanceClick(data)">
+    {{data.text}}
+    <button (click)="close(data)">close</button>
+
+</div>

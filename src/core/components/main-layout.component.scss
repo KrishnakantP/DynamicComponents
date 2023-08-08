@@ -1,0 +1,22 @@
+.main-container {
+    position: relative;
+    display: flex;
+
+    .container-left-part {
+        app-sidebar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            background-color: black;
+        }
+    }
+
+    .container-right-part {
+        flex: 1;
+        margin-left: 200px;
+    }
+
+
+}

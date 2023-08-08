@@ -1,0 +1,44 @@
+.component-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    height: 450px;
+    overflow-y: auto;
+  }
+  
+  .input-container {
+    width: 80%;
+    max-width: 822px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 5px;
+  }
+  
+  button {
+    padding: 5px 10px;
+  }
+  
+  .component-header {
+    font-weight: 700;
+    padding: 15px 0px;
+    text-align: center;
+    background-color: #e3e0e0;
+  }
+  
+  .send-button {
+    cursor: pointer;
+    background: #e3e0e0;
+    border: 1px solid #b7acac;
+  }
+  
+  .send-button:hover {
+    color: black;
+    background: #b7acac;
+    border: 1px solid #e3e0e0;
+  }

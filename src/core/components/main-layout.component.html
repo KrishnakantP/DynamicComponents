@@ -1,0 +1,11 @@
+<div class="main-container">
+  <div class="container-left-part" >
+    <!-- sidebar  -->
+    <app-sidebar (removeComponent)="removeComponent($event)"  (selectComponent)="selectComponent($event)" ></app-sidebar>
+  </div>
+  <div class="container-right-part " >
+    <!-- main content   -->
+    <dynamic-ui [componentData]="componentData" [removeComponent]="removeComponentData"></dynamic-ui>
+
+  </div>
+</div>

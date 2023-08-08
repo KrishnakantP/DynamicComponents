@@ -1,0 +1,12 @@
+<div class="component-header">Render Dynamic Components</div>
+<div class="component-container">
+  <div class="container">
+    <div class="dynamic-component-container">
+      <ng-container *ngFor="let component of dynamicComponents; let i = index">
+        <div [hidden]="component.id !== componentId">
+          <ng-container *ngComponentOutlet="dynnamicComponent;injector: component.injector;content:[component]"></ng-container>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>
