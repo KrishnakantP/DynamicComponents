@@ -5,7 +5,7 @@
   </div>
   <div class="container-right-part " >
     <!-- main content   -->
-    <dynamic-ui [componentData]="componentData" [removeComponent]="removeComponentData"></dynamic-ui>
-
+    <dynamic-ui *ngIf="!true" [componentData]="componentData" [removeComponent]="removeComponentData"></dynamic-ui>
+    <app-dynamic-loader-component *ngIf="true" [componentData]="componentData" [removeComponent]="removeComponentData"></app-dynamic-loader-component>
   </div>
 </div>
